@@ -23,38 +23,49 @@
 
 .search-input {
     width: 300px;
-    background-color: $shopapp-background-color;
+    background-color: transparent;
     margin-right: 10px;
-    border-color: rgba(255, 255, 255, 0.5);
-    color: white;
+    border-color: #1939bc;
+    color: #1939bc;
+    font-weight: bold;
 }
 
 .form-control {
     background-color: transparent;
+    color: #1939bc;
+    font-weight: bold;
+    border: #1939bc !important;
+}
 
+.option-text {
+    color: #1939bc;
+    font-weight: bold;
 }
 
 .form-control::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgba(255, 255, 255, 0.5);
+    color: #1939bc;
+    font-weight: bold;
     opacity: 1;
     /* Firefox */
 }
 
 .form-control:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: rgba(255, 255, 255, 0.5);
+    color: #1939bc;
+    font-weight: bold;
 }
 
 .form-control::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: rgba(255, 255, 255, 0.5);
+    color: #1939bc;
+    font-weight: bold;
 }
 
 .product-item {
-    background-color: $shopapp-background-color;
-    border: 1px solid rgb(35, 39, 61);
-    border-radius: 20px;
+    background-color: transparent;
+    border: 5px solid #1939bc;
+    border-radius: 10%;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -66,19 +77,21 @@
 }
 
 .product-name {
-    color: white;
+    color: #1939bc;
+    font-weight: bold;
 }
 
 .product-description {
-    color: rgb(173, 178, 203);
+    color: #1939bc;
+    font-weight: bold;
 }
 
 .product-warranty {
-    color: $shopapp-tint-color;
+    color: transparent;
 }
 
 .product-price {
-    color: white;
+    color: #1939bc;
 }
 
 .product-rating {
@@ -100,22 +113,34 @@
 .page-number {
     cursor: pointer;
     padding: 5px 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #1939bc;
     margin: 0 2px;
     border-radius: 3px;
 }
 
 .page-number.active {
-    background-color: $shopapp-color !important;
-    color: #fff;
-    border-color: $shopapp-color !important;
+    background-color: transparent !important;
+    color: #1939bc;
+    border-color: #1939bc;
 }
 
 .btn-primary {
-    background-color: $shopapp-color;
-    border-color: $shopapp-color;
+    background-color: #1939bc;
+    border-color: #1939bc;
 }
 
 .btn.btn-primary {
     margin-left: 10px;
+}
+
+.button-text {
+    color: #fcfcfc;
+}
+
+.btn-primary:focus {
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    font-weight: bold;
 }

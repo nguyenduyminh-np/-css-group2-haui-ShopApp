@@ -2,7 +2,7 @@
 <div class="container">
     <div class="intro-section">
         <h1 class="header-title">Order Checkout</h1>
-        <p class="header-title">With every purchase, we contribute to the National Liberation Front (NLF)</p>
+        <p class="header-title">With every purchase, we contribute to the Vietnam National Liberation Front (NLF)</p>
     </div>
     <form [formGroup]="orderForm"> <!-- Thêm form và gán formGroup -->
         <div class="row">
@@ -98,7 +98,11 @@
                     </tbody>
                 </table>
                 <div class="text-start mt-3">
-                    <h4 class="header-text text-end ">Tổng giá: {{ totalAmount | number:'1.2-2'}}</h4>
+                    <h4 class="header-text text-end"><span style="font-weight: bold; color:#1939bc">Tổng giá: </span>
+                        <span style="color: #1939bc;">{{
+                            totalAmount |
+                            number:'1.2-2'}}</span>
+                    </h4>
                 </div>
                 <div class="mt-3">
                     <h4 class="product-header">Nhập coupon</h4>
