@@ -4,8 +4,13 @@
     color: white;
     height: 100vh;
 }
+
+.text-center {
+    color: #1939bc;
+}
+
 .login-form {
-    background-color: $shopapp-background-color;
+    background-color: #fcfcfc;
     border-radius: 10px;
     padding: 20px;
     max-width: 500px;
@@ -13,23 +18,26 @@
     align-items: center;
     justify-content: center;
 }
+
 .login-header {
     text-align: center;
-    color: $shopapp-title-color;
+    color: #1939bc;
     margin-bottom: 20px;
 }
+
 .form-control {
-    background-color: transparent;
+    background-color: white;
     border: none;
-    color: white;
+    color: #1939bc;
 }
+
 .form-control:focus {
-    color: white;
-    background-color: transparent;
+    color: #1939bc;
+    background-color: #99a3ca;
     outline: none;
-    border-color: transparent;    
+    border-color: transparent;
 }
-  
+
 .divider-nospace {
     border-top: 1px solid white;
 }
@@ -37,6 +45,7 @@
 .password-field {
     position: relative;
 }
+
 .password-toggle {
     position: absolute;
     top: 50%;
@@ -45,6 +54,7 @@
     color: $shopapp-title-color;
     cursor: pointer;
 }
+
 .checkbox-text {
     color: rgb(243, 165, 42);
     display: flex;
@@ -52,10 +62,15 @@
     align-items: center;
     margin-top: 10px;
 }
+
 /* Màu checkbox khi được chọn */
 .checkbox-text input[type="checkbox"]:checked {
     border-color: white;
-    background-color: $shopapp-tint-color;
+    background-color: #1939bc;
+}
+
+.label-lg {
+    color: #1939bc;
 }
 
 .form-check-input {
@@ -63,19 +78,19 @@
 }
 
 .register-link {
-    color: $shopapp-title-color;
-    text-decoration: none;
+    color: #1939bc;
 }
+
 .access-right {
     margin-top: 20px;
     width: 200px;
-    color: white;
-    background-color: $shopapp-background-color !important;
-    border: 1px solid $shopapp-tint-color;
+    color: #1939bc;
+    background-color: white !important;
+    border: 1px solid #1939bc;
 }
 
 .access-right:focus {
-    border: 1px solid $shopapp-tint-color;
+    border: 1px solid white;
 }
 
 .form-control::placeholder {
@@ -96,7 +111,7 @@
 }
 
 .login-button {
-    background: linear-gradient(to right, $shopapp-tint-color, $shopapp-color);
+    background: #1939bc;
     color: white;
     border-radius: 30px;
     width: 100%;
@@ -104,9 +119,10 @@
     margin-top: 20px;
     border: none;
 }
+
 .divider {
     height: 1px;
-    background-color: rgb(243, 165, 42);
+    background-color: #1939bc;
     /* background-color: rgb(105, 244, 181) */
     margin: 20px;
 }
