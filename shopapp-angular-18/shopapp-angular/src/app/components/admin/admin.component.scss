@@ -1,10 +1,13 @@
 .container-fluid {
     background-color: white;
-    padding-left: 0 !important; /* Remove left padding */
-    padding-right: 0 !important; /* Remove right padding */
+    padding-left: 0 !important;
+    /* Remove left padding */
+    padding-right: 0 !important;
+    /* Remove right padding */
 }
+
 .header {
-    background-color: #333;
+    background-color: #1939bc !important;
     /* Header background color */
     color: white;
     /* Text color */
@@ -13,26 +16,40 @@
     text-align: center;
     /* Center-align text in the header */
 }
+
 #sidebar {
-    background-color: #007bff !important; /* Primary color */
-    color: white; /* Text color */
+    background-color: #c3c3c9 !important;
+    /* Primary color */
+    color: #1939bc;
+    /* Text color */
     height: 100vh;
-    overflow-y: auto; /* Add scrollbars if content overflows */
+    overflow-y: auto;
+    /* Add scrollbars if content overflows */
 }
+
 /* Custom CSS for sidebar links */
 #sidebar a {
-    color: white; /* Text color for links */
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Add a border line at the top of each link */
-    padding: 10px 15px; /* Add padding to links for spacing */
+    font-weight: bold;
+    color: #fcfcfc;
+    /* Text color for links */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /* Add a border line at the top of each link */
+    padding: 10px 15px;
+    /* Add padding to links for spacing */
 }
+
 /* Custom CSS for active link */
 #sidebar a.active {
-    font-weight: bold; /* Highlight active link */
+    font-weight: bold;
+    /* Highlight active link */
 }
+
 /* Change background color on hover */
 #sidebar a:hover {
-    background-color: #0056b3; /* Change the background color on hover */
+    background-color: #1939bc;
+    /* Change the background color on hover */
 }
+
 .icon {
     padding: 5px;
 }

@@ -6,7 +6,7 @@
 }
 
 .register-form {
-    background-color: $shopapp-background-color;
+    background-color: #fcfcfc;
     border-radius: 10px;
     padding: 20px;
     max-width: 500px;
@@ -18,9 +18,13 @@
 .register-header {
     text-align: center;
     /*      color: rgb(233, 66, 178);*/
-    color: $shopapp-title-color;
+    color: #1939bc;
     margin-bottom: 20px;
 
+}
+
+.css-text {
+    color: #1939bc;
 }
 
 .label-text {
@@ -29,16 +33,16 @@
 
 .form-control {
     background-color: transparent;
-    border: none;
-    color: white;
+    border: 1px solid rgb(32, 34, 60);
+    color: #1939bc;
 }
 
 .form-control:focus {
-    color: white;
-    background-color: transparent;
+    color: #1939bc;
+    background-color: #fcfcfc;
     outline: none;
     box-shadow: none;
-    border-color: transparent;
+    border: 1px solid rgb(32, 34, 60);
     padding-left: 0;
 }
 
@@ -74,12 +78,12 @@
 }
 
 .register-link {
-    color: $shopapp-title-color;
-    text-decoration: none;
+    color: #1939bc;
+
 }
 
 .register-button {
-    background: linear-gradient(to right, $shopapp-tint-color, $shopapp-color);
+    background: #1939bc;
     color: white;
     border-radius: 30px;
     width: 100%;
@@ -101,17 +105,17 @@
 
 .form-control::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgba(243, 165, 42, 0.4);
+    color: #1939bc;
     opacity: 1;
     /* Firefox */
 }
 
 .form-control:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: rgba(243, 165, 42, 0.4);
+    color: #1939bc;
 }
 
 .form-control::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: rgba(243, 165, 42, 0.4);
+    color: #1939bc;
 }
