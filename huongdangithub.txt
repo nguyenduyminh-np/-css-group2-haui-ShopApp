@@ -10,7 +10,9 @@ git commit -m "Mô tả thay đổi"
 git push origin <tên-branch>
 
 - Sau khi hoàn thành task của mình, báo với nhóm trưởng ( Minh) để Pull
- 	+ Tạo tab "Pull Requests" ở menu trên cùng
+ 	+ Ấn tab "Pull Requests" ở menu trên cùng
 	+ Nhấn "New Pull Request"
 	+ Nhập mô tả ngắn gọn task của mình trong phần nội dung "Pull Request"
 	+ Nhấn "Create Pull Request"
+
+Làm đến đây dừng lại, báo Minh để merge pull request. Không tự ý merge
