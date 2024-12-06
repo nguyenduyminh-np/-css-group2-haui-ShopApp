@@ -14,3 +14,5 @@ git push origin <tên-branch>
 	+ Nhấn "New Pull Request"
 	+ Nhập mô tả ngắn gọn task của mình trong phần nội dung "Pull Request"
 	+ Nhấn "Create Pull Request"
+
+Làm đến đây dừng lại, báo Minh để merge pull request. Không tự ý merge
