@@ -92,10 +92,20 @@ export class DetailProductComponent implements OnInit {
     debugger
     this.showImage(this.currentImageIndex - 1);
   }
+
+  showNotification: boolean = false; // Biến để điều khiển hiển thị thông báo
+
   addToCart(): void {
     debugger
     if (this.product) {
       this.cartService.addToCart(this.product.id, this.quantity);
+      // Hiển thị thông báo
+      this.showNotification = true;
+
+      // Ẩn thông báo sau 3 giây
+      setTimeout(() => {
+        this.showNotification = false;
+      }, 3000);
     } else {
       // Xử lý khi product là null
       console.error('Không thể thêm sản phẩm vào giỏ hàng vì product là null.');
@@ -115,4 +125,6 @@ export class DetailProductComponent implements OnInit {
   buyNow(): void {
     this.router.navigate(['/orders']);
   }
+
+
 }

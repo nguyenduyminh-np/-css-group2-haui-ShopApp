@@ -45,6 +45,9 @@
           <button class="btn btn-primary" (click)="addToCart()">Thêm vào giỏ hàng</button>
           <button class="btn btn-primary" (click)="buyNow()">Mua ngay</button>
         </div>
+        <div class="notification" *ngIf="showNotification">
+          Sản phẩm "{{ product?.name }}" đã được thêm vào giỏ hàng!
+        </div>
         <div class="product-quantity">
           <div class="border-wrapper">
             <button (click)="decreaseQuantity()">-</button>
