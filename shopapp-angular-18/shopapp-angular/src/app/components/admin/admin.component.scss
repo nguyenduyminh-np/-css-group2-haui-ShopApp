@@ -11,13 +11,16 @@
     /* Header background color */
     color: white;
     /* Text color */
+    padding-left: 10px;
     padding: 10px;
     /* Add padding to the header */
     text-align: center;
     /* Center-align text in the header */
+    border: 1px solid #fcfcfc;
 }
 
 #sidebar {
+    border: 1px solid #fcfcfc;
     background-color: #c3c3c9 !important;
     /* Primary color */
     color: #1939bc;
@@ -46,6 +49,7 @@
 
 /* Change background color on hover */
 #sidebar a:hover {
+    border: 1px solid #fcfcfc;
     background-color: #1939bc;
     /* Change the background color on hover */
 }

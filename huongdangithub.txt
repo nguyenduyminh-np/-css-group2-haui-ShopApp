@@ -8,7 +8,7 @@ git checkout -b <tên-branch>
 git add .
 git commit -m "Mô tả thay đổi"
 git push origin <tên-branch>
-
+ Xem video hướng dẫn create Pull request trong nhóm zalo
 - Sau khi hoàn thành task của mình, báo với nhóm trưởng ( Minh) để Pull
  	+ Ấn tab "Pull Requests" ở menu trên cùng
 	+ Nhấn "New Pull Request"
