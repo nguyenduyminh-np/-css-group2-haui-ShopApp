@@ -5,7 +5,8 @@ import { Route, Router,Routes } from "@angular/router";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { ProductAdminComponent } from "./product/product.admin.component";
-import { CategoryAdminComponent } from "./category/category.admin.component";
+import { UserAdminComponent } from "./user/user.admin.component";
+import { DetailUserAdminComponent } from "./details-user/detail.user.admin.component";
 
 const routes: Routes = [
     {
@@ -25,8 +26,12 @@ const routes: Routes = [
                 component: ProductAdminComponent
             },
             {
-                path: 'categories',
-                component: CategoryAdminComponent
+                path: 'users',
+                component: UserAdminComponent
+            },
+            {
+                path: 'users/:id',
+                component: DetailUserAdminComponent 
             },
         ]
     }

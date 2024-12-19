@@ -6,7 +6,8 @@ import { AdminComponent } from './admin.component';
 import { OrderAdminComponent } from './order/order.admin.component';
 import { DetailOrderAdminComponent } from './detail-order/detail.order.admin.component';
 import { ProductAdminComponent } from './product/product.admin.component';
-import { CategoryAdminComponent } from './category/category.admin.component';
+import { UserAdminComponent } from './user/user.admin.component';
+import { DetailUserAdminComponent } from './details-user/detail.user.admin.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -15,9 +16,9 @@ import { FormsModule } from '@angular/forms';
     AdminComponent,
     OrderAdminComponent,
     DetailOrderAdminComponent,
-
+    DetailUserAdminComponent,
     ProductAdminComponent,
-    CategoryAdminComponent,
+    UserAdminComponent,
   ],
   imports: [
     AdminRoutingModule, // import routes,

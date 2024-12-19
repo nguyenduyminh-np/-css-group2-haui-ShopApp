@@ -14,8 +14,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" (click)="showAdminComponent('categories')">
-              <i class="fab fa-canadian-maple-leaf icon"></i>Categories
+            <a class="nav-link" (click)="showAdminComponent('users')">
+              <i class="fab fa-canadian-maple-leaf icon"></i>Users
             </a>
           </li>
           <li class="nav-item">
@@ -27,13 +27,13 @@
       </div>
     </nav>
     <div class="col-md-10 col-lg-10 overflow-auto">
-
-      <!-- <ng-container [ngSwitch]="adminComponent">
-        <app-order-admin *ngSwitchCase="'orders'"></app-order-admin>
-        <app-product-admin *ngSwitchCase="'products'"></app-product-admin>
-        <app-category-admin *ngSwitchCase="'categories'"></app-category-admin>
-      </ng-container> -->
-
+      <!--
+        <ng-container [ngSwitch]="adminComponent">
+          <app-order-admin *ngSwitchCase="'orders'"></app-order-admin>
+          <app-product-admin *ngSwitchCase="'products'"></app-product-admin>
+          <app-category-admin *ngSwitchCase="'categories'"></app-category-admin>                    
+        </ng-container>
+        -->
       <router-outlet></router-outlet>
     </div>
   </div>

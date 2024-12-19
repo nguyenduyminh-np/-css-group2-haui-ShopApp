@@ -83,4 +83,12 @@ public class User extends BaseEntity implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+    public void setIsActive(boolean isActive) {
+        this.active = isActive; 
+    }
+    
+    public boolean isIsActive() {
+        return active; 
+    }
+    
 }

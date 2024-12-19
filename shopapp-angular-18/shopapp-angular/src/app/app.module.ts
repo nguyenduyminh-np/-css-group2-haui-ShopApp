@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
 //import { AdminComponent } from './components/admin/admin.component';
 //import { OrderAdminComponent } from './components/admin/order/order.admin.component';
 import { ProductAdminComponent } from './components/admin/product/product.admin.component';
-import { CategoryAdminComponent } from './components/admin/category/category.admin.component';
+import { UserAdminComponent } from './components/admin/user/user.admin.component';
 //import { DetailOrderAdminComponent } from './components/admin/detail-order/detail.order.admin.component';
 import { AdminModule } from './components/admin/admin.module';
 import { 
