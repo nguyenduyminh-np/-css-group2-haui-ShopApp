@@ -8,15 +8,18 @@ import { DetailOrderAdminComponent } from './detail-order/detail.order.admin.com
 import { ProductAdminComponent } from './product/product.admin.component';
 import { CategoryAdminComponent } from './category/category.admin.component';
 import { CommonModule } from '@angular/common';
+import { DetailProductAdminComponent } from './detail-product/detail.product.admin.component';
 import { FormsModule } from '@angular/forms';
+import { NewProductAdminComponent } from './new-product/new.product.admin.component';
 
 @NgModule({
   declarations: [
     AdminComponent,
     OrderAdminComponent,
     DetailOrderAdminComponent,
-
+    DetailProductAdminComponent,
     ProductAdminComponent,
+    NewProductAdminComponent,
     CategoryAdminComponent,
   ],
   imports: [

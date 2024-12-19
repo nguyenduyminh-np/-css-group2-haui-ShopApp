@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Product Details</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Product Information</h3>
+      <p><strong>ID:</strong> {{ product.id }}</p>
+        <div class="form-group">
+            <label for="name"><strong>Product Name:</strong></label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="product.name" name="name" />
+          </div>
+          <div class="form-group">
+            <label for="price"><strong>Price:</strong></label>
+            <input type="number" class="form-control" id="price" [(ngModel)]="product.price" name="price" />
+          </div>
+          <div class="form-group">
+            <label for="description"><strong>Detail Description:</strong></label>
+            <input type="text" class="form-control" id="description" [(ngModel)]="product.description" name="description" />
+          </div>
+      <p><strong>Created At:</strong> {{ product.created_at | date }}</p>
+      <p><strong>Updated At:</strong> {{ product.updated_at | date }}</p>
+      <div class="form-group">
+        <label for="categorySelect"><strong>Category:</strong></label>
+        <select class="form-control" id="categorySelect" >
+          <option value="1">Bánh kẹo</option>
+          <option value="2">Chăn ga gối đệm</option>
+          <option value="3">Phụ kiện</option>
+          <option value="4">Đồ gia dụng</option>
+          <option value="5">Quần áo</option>
+          <option value="6">Đồ điện tử</option>
+        </select>
+      </div>
+    </div> 
+  </div>
+  <button class="btn btn-primary col-md-2" style="margin: 10px;" (click)="updateProduct()">Update</button>
+</div>
+

@@ -19,16 +19,20 @@ export class ProductService {
       .set('keyword', keyword)
       .set('category_id', categoryId)
       .set('page', page.toString())
-      .set('limit', limit.toString());            
+      .set('limit', limit.toString());
     return this.http.get<Product[]>(this.apiGetProducts, { params });
   }
   getDetailProduct(productId: number) {
     return this.http.get(`${environment.apiBaseUrl}/products/${productId}`);
   }
   getProductsByIds(productIds: number[]): Observable<Product[]> {
-    // Chuyển danh sách ID thành một chuỗi và truyền vào params
     debugger
-    const params = new HttpParams().set('ids', productIds.join(',')); 
+    const params = new HttpParams().set('ids', productIds.join(','));
     return this.http.get<Product[]>(`${this.apiGetProducts}/by-ids`, { params });
+  }
+
+  deleteProduct(productID: number): Observable<any> {
+    const url = `${environment.apiBaseUrl}/products/${productID}`;
+    return this.http.delete(url, { responseType: 'text' });
   }
 }

@@ -3,8 +3,10 @@ import { OrderAdminComponent } from "./order/order.admin.component";
 import { DetailOrderAdminComponent } from "./detail-order/detail.order.admin.component";
 import { Route, Router,Routes } from "@angular/router";
 import { NgModule } from "@angular/core";
+import { DetailProductAdminComponent } from "./detail-product/detail.product.admin.component";
 import { RouterModule } from "@angular/router";
 import { ProductAdminComponent } from "./product/product.admin.component";
+import { NewProductAdminComponent } from "./new-product/new.product.admin.component";
 import { CategoryAdminComponent } from "./category/category.admin.component";
 
 const routes: Routes = [
@@ -23,6 +25,14 @@ const routes: Routes = [
             {
                 path: 'products',
                 component: ProductAdminComponent
+            },
+            {
+                path: 'products/new',
+                component: NewProductAdminComponent
+            },
+            {
+                path: 'products/:id',
+                component: DetailProductAdminComponent
             },
             {
                 path: 'categories',
