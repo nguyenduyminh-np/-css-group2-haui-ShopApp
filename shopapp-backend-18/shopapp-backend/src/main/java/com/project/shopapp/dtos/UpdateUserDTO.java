@@ -35,4 +35,8 @@ public class UpdateUserDTO {
 
     @JsonProperty("google_account_id")
     private int googleAccountId;
+
+    @JsonProperty("is_active")
+    private boolean isActive; 
+    
 }
